@@ -1,0 +1,13 @@
+<div>
+    <form [formGroup]="todoForm" (ngSubmit)="onSubmitTask()">
+        <input type="text" placeholder="Enter Task" formControlName="task">
+        <button> Add </button>
+    </form>
+    <h1>list</h1>
+    <ul>
+        <li *ngFor="let element of listTask">
+            {{element.name}}
+        </li>
+    </ul>
+
+</div>
